@@ -1,0 +1,61 @@
+{
+  "_sample_meta": {
+    "note": "Sample analysis output for the Aldi/Season's Choice 'Bananas Covered in Dark Chocolate and Peanut Butter' label image in this folder. Replace this file with your own analyzer output to customize the demo.",
+    "source_image": "examples/sample_image.jpg"
+  },
+  "ingredients_analyzed": [
+    {
+      "name": "Cocoa Powder",
+      "risk_level": "MEDIUM",
+      "classification": "Potential Heavy Metal Contaminant (Cadmium)",
+      "concern": "Cocoa is a known dietary source of cadmium, a heavy metal with endocrine-disrupting and nephrotoxic effects. Levels vary by growing region; ConsumerReports and As You Sow have published lead/cadmium testing showing meaningful variability across chocolate products. Cadmium is also classified as a Group 1 human carcinogen.",
+      "alternative": "Cocoa from origins with documented lower-heavy-metal soil profiles (some West African origins test lower than South American). Consumer-tested certified brands disclose batch testing."
+    },
+    {
+      "name": "Cocoa Mass",
+      "risk_level": "MEDIUM",
+      "classification": "Potential Heavy Metal Contaminant (Cadmium)",
+      "concern": "Same cadmium concern as cocoa powder, often at higher concentration since cocoa mass is the unprocessed paste of the bean.",
+      "alternative": "See cocoa powder note."
+    },
+    {
+      "name": "Soy Lecithin (Emulsifier)",
+      "risk_level": "LOW",
+      "classification": "Phytoestrogen Source (Trace)",
+      "concern": "Soy lecithin contains very small amounts of soy isoflavones (genistein, daidzein) which are phytoestrogens. Used as an emulsifier, the exposure per serving is negligible and clinically irrelevant for endocrine activity in typical consumption.",
+      "alternative": "Sunflower lecithin if avoiding all soy-derived ingredients."
+    },
+    {
+      "name": "Full Cream Milk Powder",
+      "risk_level": "LOW",
+      "classification": "Potential Hormone Residue (rBST/rBGH)",
+      "concern": "Conventional US dairy may contain trace recombinant bovine somatotropin (rBST/rBGH); banned in EU and Canada but permitted in the US. Endocrine relevance to human consumers is debated; FDA and AMA position is no significant effect at consumed levels.",
+      "alternative": "Organic or 'no rBST/rBGH' labeled dairy."
+    },
+    {"name": "Banana",            "risk_level": "MINIMAL", "classification": "No EDC signal", "concern": "None identified", "alternative": "N/A"},
+    {"name": "Peanut (in Peanut Butter)", "risk_level": "MINIMAL", "classification": "No EDC signal", "concern": "None identified", "alternative": "N/A"},
+    {"name": "Sugar",              "risk_level": "MINIMAL", "classification": "No EDC signal", "concern": "None identified", "alternative": "N/A"},
+    {"name": "Soybean Oil",        "risk_level": "MINIMAL", "classification": "No EDC signal", "concern": "Highly refined; phytoestrogen content effectively zero.", "alternative": "N/A"},
+    {"name": "Salt",               "risk_level": "MINIMAL", "classification": "No EDC signal", "concern": "None identified", "alternative": "N/A"},
+    {"name": "Coconut Oil",        "risk_level": "MINIMAL", "classification": "No EDC signal", "concern": "None identified", "alternative": "N/A"},
+    {"name": "Whey",               "risk_level": "MINIMAL", "classification": "No EDC signal", "concern": "Whey protein itself carries no endocrine concern beyond the rBST note for the source dairy.", "alternative": "N/A"},
+    {"name": "Skim Milk Powder",   "risk_level": "MINIMAL", "classification": "No EDC signal", "concern": "Same rBST note as full cream milk powder.", "alternative": "N/A"},
+    {"name": "Cocoa Butter",       "risk_level": "MINIMAL", "classification": "No EDC signal", "concern": "Cocoa butter is the lipid fraction; cadmium concern is for solids, not butter.", "alternative": "N/A"},
+    {"name": "Vanilla (Natural Flavor)", "risk_level": "MINIMAL", "classification": "No EDC signal", "concern": "None identified", "alternative": "N/A"}
+  ],
+  "overall_risk": "LOW",
+  "flagged_count": 2,
+  "total_count": 14,
+  "summary": "This food product contains primarily naturally occurring ingredients without significant endocrine-disrupting activity. The principal concern is cadmium contamination of cocoa, which varies widely by sourcing — independent testing of finished chocolate products is informative but not labeled. Soy lecithin contributes negligible phytoestrogen exposure at emulsifier-level inclusion. Conventional US dairy may carry trace rBST.",
+  "key_concerns": [
+    "Cadmium in cocoa products is the only material endocrine-relevant concern; consider checking third-party heavy-metal testing if consuming chocolate products frequently.",
+    "Soy lecithin and dairy are present but at endocrine-irrelevant exposure levels for typical adult consumption."
+  ],
+  "recommendation": "No EDC-driven restriction needed for occasional consumption. Pregnant individuals, infants, and small children should prefer chocolate products with published heavy-metal testing or use moderation, particularly for dark-chocolate-heavy items.",
+  "_cache_stats": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 0
+  }
+}

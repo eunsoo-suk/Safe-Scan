@@ -1,0 +1,86 @@
+{
+  "_sample_meta": {
+    "note": "Sample analysis output for the Aldi/Season's Choice 'Bananas Covered in Dark Chocolate and Peanut Butter' label image in this folder. Replace this file with your own analyzer output to customize the demo. The unified schema is documented in backend/analyzers/base.py.",
+    "source_image": "examples/sample_image.jpg"
+  },
+  "ingredients_analyzed": [
+    {
+      "name": "Peanut (in Peanut Butter)",
+      "risk_level": "HIGH",
+      "classification": "FDA Top 9 Food Allergen (Peanut)",
+      "concern": "One of the most common causes of severe IgE-mediated food allergy and fatal anaphylaxis. Mandatory disclosure under FALCPA. Even trace cross-contact can trigger reactions in highly sensitive individuals.",
+      "alternative": "N/A — peanut-allergic individuals must strictly avoid this product. No safe substitution in-product."
+    },
+    {
+      "name": "Coconut Oil",
+      "risk_level": "HIGH",
+      "classification": "FDA Top 9 Food Allergen (Tree Nut - Coconut)",
+      "concern": "Coconut is classified by the FDA as a tree nut under FALCPA and the FASTER Act, requiring mandatory disclosure. The label confirms with 'CONTAINS: COCONUT (TREE NUTS)'. Risk of IgE-mediated reaction including anaphylaxis in coconut-allergic individuals, though prevalence is lower than peanut or tree nut.",
+      "alternative": "N/A — coconut-allergic individuals must avoid."
+    },
+    {
+      "name": "Whey",
+      "risk_level": "HIGH",
+      "classification": "FDA Top 9 Food Allergen (Milk)",
+      "concern": "Whey protein is a major dairy allergen and a leading cause of IgE-mediated milk allergy, particularly in children. Risk of anaphylaxis. Mandatory disclosure under FALCPA.",
+      "alternative": "N/A — milk-allergic individuals must avoid."
+    },
+    {
+      "name": "Skim Milk Powder",
+      "risk_level": "HIGH",
+      "classification": "FDA Top 9 Food Allergen (Milk)",
+      "concern": "Contains both casein and whey protein. IgE-mediated milk allergy risk; also a concern for non-IgE delayed-type milk protein intolerance (FPIES) in infants.",
+      "alternative": "N/A — milk-allergic individuals must avoid."
+    },
+    {
+      "name": "Full Cream Milk Powder",
+      "risk_level": "HIGH",
+      "classification": "FDA Top 9 Food Allergen (Milk)",
+      "concern": "Concentrated source of milk proteins (casein, whey). Same anaphylaxis risk as other dairy ingredients in this product.",
+      "alternative": "N/A — milk-allergic individuals must avoid."
+    },
+    {
+      "name": "Soy Lecithin (Emulsifier)",
+      "risk_level": "MEDIUM",
+      "classification": "FDA Top 9 Food Allergen (Soy) — Disclosed",
+      "concern": "Soy lecithin contains trace soy protein. Most soy-allergic individuals tolerate lecithin without reaction, but it remains a mandatory-disclosure ingredient and rare severe reactions are documented. Individuals with established soy anaphylaxis should still avoid.",
+      "alternative": "Sunflower lecithin is a common allergen-free emulsifier substitute used in some allergy-friendly chocolate."
+    },
+    {
+      "name": "Soybean Oil (in Peanut Butter)",
+      "risk_level": "LOW",
+      "classification": "FDA Top 9 Source — Highly Refined",
+      "concern": "Highly refined soybean oil is exempt from FALCPA labeling when residual protein is below detectable thresholds. Most soy-allergic individuals tolerate refined soybean oil, but cold-pressed/unrefined forms retain allergenic protein.",
+      "alternative": "Refined sunflower or canola oil if avoiding soy entirely."
+    },
+    {
+      "name": "Vanilla (Natural Flavor)",
+      "risk_level": "LOW",
+      "classification": "Natural Flavor — Composition Manufacturer-Dependent",
+      "concern": "Natural flavors are not required to disclose component allergens beyond Top 9. Generally well-tolerated but a possible source of hidden minor allergens for highly sensitive consumers.",
+      "alternative": "Single-source vanilla extract or vanilla bean powder if natural-flavor mixtures are a concern."
+    },
+    {"name": "Banana",            "risk_level": "MINIMAL", "classification": "No significant concern", "concern": "Rare latex-fruit syndrome cross-reactivity in latex-allergic individuals; otherwise broadly safe.", "alternative": "N/A"},
+    {"name": "Sugar",              "risk_level": "MINIMAL", "classification": "No significant concern", "concern": "None identified", "alternative": "N/A"},
+    {"name": "Salt",               "risk_level": "MINIMAL", "classification": "No significant concern", "concern": "None identified", "alternative": "N/A"},
+    {"name": "Cocoa Powder",       "risk_level": "MINIMAL", "classification": "No significant concern", "concern": "True cocoa allergy is rare; broadly safe.", "alternative": "N/A"},
+    {"name": "Cocoa Butter",       "risk_level": "MINIMAL", "classification": "No significant concern", "concern": "None identified", "alternative": "N/A"},
+    {"name": "Cocoa Mass",         "risk_level": "MINIMAL", "classification": "No significant concern", "concern": "None identified", "alternative": "N/A"}
+  ],
+  "overall_risk": "HIGH",
+  "flagged_count": 6,
+  "total_count": 14,
+  "summary": "This is a food product containing four FDA Top 9 mandatory-disclosure allergens: peanut, milk (in three forms — whey, skim milk powder, full cream milk powder), soy (lecithin and refined soybean oil), and coconut (FDA-classified tree nut). Individuals with known allergies to any of these face risk of severe IgE-mediated reactions including anaphylaxis. The label correctly carries a 'CONTAINS' statement, but cross-contact and ingredient sourcing should also be verified.",
+  "key_concerns": [
+    "Product contains peanut, milk, soy, and coconut — four of the FDA Top 9 allergens — making it unsuitable for anyone with allergy to any of these.",
+    "Multiple dairy ingredients (whey, skim milk powder, full cream milk powder) increase the concentration of milk protein, raising threshold-dose sensitivity for milk-allergic individuals.",
+    "Even with disclosure, cross-contact in shared manufacturing facilities is a known risk for severe reactions; check for 'may contain' statements on the package."
+  ],
+  "recommendation": "Anyone with diagnosed peanut, tree nut, milk, or soy allergy should strictly avoid this product. For households where one member is allergic, store separately and avoid utensil cross-contact. Always carry epinephrine if prescribed.",
+  "_cache_stats": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 0
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "extracted_ingredients": [
+    "Banana",
+    "White Chocolate Compound with Peanut Butter (Peanut Butter [Peanut, Sugar, Soybean Oil, Salt], White Chocolate Compound [Coconut Oil, Sugar, Whey, Skim Milk Powder, Soy Lecithin (Emulsifier)])",
+    "Dark Chocolate Compound (Sugar, Coconut Oil, Cocoa Powder, Cocoa Butter, Cocoa Mass, Soy Lecithin [Emulsifier], Full Cream Milk Powder, Vanilla [Natural Flavor])",
+    "Contains: Coconut (Tree Nuts), Milk, Peanut, Soy"
+  ],
+  "comma_separated": "Banana, White Chocolate Compound with Peanut Butter (Peanut Butter [Peanut, Sugar, Soybean Oil, Salt], White Chocolate Compound [Coconut Oil, Sugar, Whey, Skim Milk Powder, Soy Lecithin (Emulsifier)]), Dark Chocolate Compound (Sugar, Coconut Oil, Cocoa Powder, Cocoa Butter, Cocoa Mass, Soy Lecithin [Emulsifier], Full Cream Milk Powder, Vanilla [Natural Flavor])",
+  "product_type": "food",
+  "confidence": "HIGH",
+  "notes": "Allergen disclosure statement (CONTAINS: COCONUT (TREE NUTS), MILK, PEANUT, SOY) extracted as a separate item below the main ingredient list.",
+  "ingredient_count": 14,
+  "language_detected": "English",
+  "product_name": "Bananas Covered in Dark Chocolate and Peanut Butter (Season's Choice)",
+  "_cache_stats": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 0
+  }
+}

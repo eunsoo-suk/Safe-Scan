@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ' *)",
+      "Skill(claude-api)",
+      "Bash(python -c \"import anthropic\")",
+      "Bash(python -c \"import fastapi\")",
+      "Bash(python -c \"import streamlit\")",
+      "Bash(python3 *)",
+      "Bash(pip3 install *)"
+    ]
+  }
+}

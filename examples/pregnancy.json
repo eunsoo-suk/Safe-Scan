@@ -1,0 +1,74 @@
+{
+  "_sample_meta": {
+    "note": "Sample analysis output for the Aldi/Season's Choice 'Bananas Covered in Dark Chocolate and Peanut Butter' label image in this folder. Replace this file with your own analyzer output to customize the demo.",
+    "source_image": "examples/sample_image.jpg"
+  },
+  "ingredients_analyzed": [
+    {
+      "name": "Cocoa Powder",
+      "risk_level": "MEDIUM",
+      "classification": "Caffeine + Heavy Metal — Moderation in Pregnancy",
+      "concern": "Dark-chocolate-containing products contribute to total daily caffeine intake (~12 mg per 30g serving in this product, low but cumulative). Cadmium and trace lead in cocoa are concerns for the developing fetus per AAP guidance to limit pediatric chocolate intake and for pregnant individuals to favor brands with disclosed testing.",
+      "alternative": "Lighter chocolate, smaller portions, or carob-based alternatives."
+    },
+    {
+      "name": "Cocoa Mass",
+      "risk_level": "MEDIUM",
+      "classification": "Caffeine + Heavy Metal — Moderation",
+      "concern": "Same caffeine and heavy-metal considerations as cocoa powder, often at higher concentration.",
+      "alternative": "See cocoa powder note."
+    },
+    {
+      "name": "Peanut (in Peanut Butter)",
+      "risk_level": "LOW",
+      "classification": "Pregnancy: Safe; Infant Introduction Guidance Applies",
+      "concern": "Peanut is safe in pregnancy and may reduce infant peanut-allergy risk per LEAP trial and 2017 NIAID guidelines for infants 4–6 months. NOT a choking hazard in this smooth-incorporated form. Whole peanuts and large nut pieces remain a choking hazard for under-4s.",
+      "alternative": "N/A in pregnancy. For infant introduction follow current NIAID early-introduction guidelines."
+    },
+    {
+      "name": "Full Cream Milk Powder",
+      "risk_level": "LOW",
+      "classification": "Pasteurized Dairy — Safe in Pregnancy",
+      "concern": "Powdered dairy is produced from pasteurized milk and carries no Listeria risk; safe in pregnancy. Not appropriate as a primary milk source for infants under 12 months (AAP guidance — risk of iron deficiency anemia).",
+      "alternative": "N/A for pregnancy."
+    },
+    {
+      "name": "Banana",
+      "risk_level": "LOW",
+      "classification": "Pregnancy & Pediatric: Safe; Choking Hazard Form Note",
+      "concern": "Banana is safe and well-tolerated across pregnancy and infancy. In this product the banana is coated in chocolate; for toddlers and under-4 children the firmer chocolate-coated piece form may pose a choking hazard versus fresh ripe banana.",
+      "alternative": "Fresh ripe banana sliced into age-appropriate pieces for children."
+    },
+    {
+      "name": "Vanilla (Natural Flavor)",
+      "risk_level": "MINIMAL",
+      "classification": "Pregnancy & Pediatric: Safe",
+      "concern": "Vanilla as a food flavoring is safe in pregnancy. Vanilla extract contains alcohol but at culinary trace amounts it is not a fetal exposure concern.",
+      "alternative": "N/A"
+    },
+    {"name": "Sugar",              "risk_level": "MINIMAL", "classification": "Safe for All", "concern": "Standard added-sugar moderation applies; no pregnancy-specific concern.", "alternative": "N/A"},
+    {"name": "Soybean Oil",        "risk_level": "MINIMAL", "classification": "Safe for All", "concern": "None identified", "alternative": "N/A"},
+    {"name": "Salt",               "risk_level": "MINIMAL", "classification": "Safe for All", "concern": "None identified", "alternative": "N/A"},
+    {"name": "Coconut Oil",        "risk_level": "MINIMAL", "classification": "Safe for All", "concern": "None identified", "alternative": "N/A"},
+    {"name": "Whey",               "risk_level": "MINIMAL", "classification": "Safe for All (pasteurized source)", "concern": "Whey from pasteurized milk; no Listeria risk.", "alternative": "N/A"},
+    {"name": "Skim Milk Powder",   "risk_level": "MINIMAL", "classification": "Safe for All (pasteurized source)", "concern": "Same as full cream milk powder.", "alternative": "N/A"},
+    {"name": "Soy Lecithin",       "risk_level": "MINIMAL", "classification": "Safe for All", "concern": "Trace soy emulsifier; not clinically relevant for fetal phytoestrogen exposure.", "alternative": "N/A"},
+    {"name": "Cocoa Butter",       "risk_level": "MINIMAL", "classification": "Safe for All", "concern": "None identified", "alternative": "N/A"}
+  ],
+  "overall_risk": "LOW",
+  "flagged_count": 2,
+  "total_count": 14,
+  "summary": "This is a pasteurized, shelf-stable food product. There are no contraindications to consumption during pregnancy or breastfeeding. The primary considerations are moderation of cocoa-derived caffeine and heavy metals (cadmium, trace lead) particularly for those eating chocolate products frequently. For infants and toddlers, the chocolate-coated banana piece form is a relative choking hazard versus fresh fruit; for under-1 year, this product is not appropriate as a snack regardless.",
+  "key_concerns": [
+    "Cocoa-derived cadmium and trace lead are the primary pregnancy and pediatric concerns — moderate intake, particularly during the first trimester and for small children.",
+    "Choking-hazard form: chocolate-covered banana pieces are firm and round; not appropriate for infants under 12 months and consume with caution for under-4s.",
+    "Peanut allergen presence is NOT a pregnancy avoidance reason — current guidance supports peanut consumption in pregnancy to reduce infant allergy risk."
+  ],
+  "recommendation": "Safe in moderation during pregnancy and breastfeeding. Limit to a few servings per week if you are a frequent chocolate consumer to keep cumulative cadmium exposure low. Do not give to infants under 12 months. For toddlers, cut into small pieces or serve fresh banana with a small amount of the topping separately.",
+  "_cache_stats": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 0
+  }
+}

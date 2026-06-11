@@ -1,0 +1,86 @@
+{
+  "_sample_meta": {
+    "note": "Sample analysis output for the Aldi/Season's Choice 'Bananas Covered in Dark Chocolate and Peanut Butter' label image in this folder. Replace this file with your own analyzer output to customize the demo.",
+    "source_image": "examples/sample_image.jpg"
+  },
+  "ingredients_analyzed": [
+    {
+      "name": "Cocoa Powder",
+      "risk_level": "HIGH",
+      "classification": "Deforestation & Labor Concern — West African Cocoa",
+      "concern": "Cocoa production is a primary driver of forest loss in Ivory Coast and Ghana, which together supply ~60% of the world's cocoa. The industry also has documented child-labor concerns. Without explicit certification (Fair Trade, Rainforest Alliance, Cocoa Horizons), origin cannot be assumed responsible. Carbon footprint ~19 kg CO₂e/kg.",
+      "alternative": "Certified Fair Trade or Rainforest Alliance cocoa; brands with disclosed supply chains and deforestation-free commitments."
+    },
+    {
+      "name": "Cocoa Mass",
+      "risk_level": "HIGH",
+      "classification": "Deforestation & Labor Concern — West African Cocoa",
+      "concern": "Same supply-chain concern as cocoa powder. Cocoa mass is unprocessed cocoa bean paste, the most direct indicator of cocoa volume in the product.",
+      "alternative": "See cocoa powder note."
+    },
+    {
+      "name": "Full Cream Milk Powder",
+      "risk_level": "MEDIUM",
+      "classification": "Moderate Carbon Footprint (Dairy)",
+      "concern": "Powdered whole milk requires both dairy production (~3 kg CO₂e/kg of milk) and energy-intensive spray-drying. Comparable to cheese in carbon intensity per kg of finished product (~21 kg CO₂e/kg). Methane from enteric fermentation is the dominant contributor.",
+      "alternative": "Plant-based powder substitutes (oat, coconut, soy) have meaningfully lower carbon intensity, though formulation impacts vary."
+    },
+    {
+      "name": "Coconut Oil",
+      "risk_level": "MEDIUM",
+      "classification": "Tropical Agriculture — Variable Sourcing",
+      "concern": "Coconut production has lower deforestation pressure than palm oil but is concentrated in Philippines, Indonesia, and India. Smallholder labor conditions are highly variable; biodiversity impact is less severe than palm. No mandatory certification system equivalent to RSPO.",
+      "alternative": "Domestically produced oils (sunflower, canola) have lower transport carbon; fair-trade coconut where available."
+    },
+    {
+      "name": "Whey",
+      "risk_level": "MEDIUM",
+      "classification": "Dairy Byproduct — Moderate Carbon Footprint",
+      "concern": "Whey is a dairy byproduct; using it reduces waste, but the underlying dairy production carries the same carbon and methane impact as other dairy ingredients.",
+      "alternative": "Same alternatives as milk powder."
+    },
+    {
+      "name": "Skim Milk Powder",
+      "risk_level": "MEDIUM",
+      "classification": "Moderate Carbon Footprint (Dairy)",
+      "concern": "Slightly lower carbon footprint than full cream milk powder due to fat removal, but still meaningfully impactful.",
+      "alternative": "See full cream milk powder note."
+    },
+    {
+      "name": "Soybean Oil",
+      "risk_level": "LOW",
+      "classification": "Deforestation-Adjacent (Region-Dependent)",
+      "concern": "Soybean expansion has driven Amazon and Cerrado deforestation in Brazil; the 2006 Soy Moratorium has significantly reduced direct Amazon clearing. US-grown soy has lower deforestation linkage. Origin not labeled.",
+      "alternative": "Certified deforestation-free soy or domestically sourced oils."
+    },
+    {
+      "name": "Vanilla (Natural Flavor)",
+      "risk_level": "LOW",
+      "classification": "Variable Sourcing — Madagascar Cyclone Pressure",
+      "concern": "True vanilla from Madagascar faces climate and cyclone-related supply pressure with documented labor concerns. 'Natural Flavor' may also indicate synthetic vanillin from lignin or guaiacol, which has lower agricultural footprint but different chemistry.",
+      "alternative": "Fair-trade Madagascar vanilla or vanilla beans with disclosed origin."
+    },
+    {"name": "Banana",              "risk_level": "LOW",     "classification": "Low Carbon Footprint (~0.7 kg CO₂e/kg)", "concern": "Banana production has pesticide and worker-condition concerns in some growing regions; Fair Trade options widely available.", "alternative": "Fair Trade or organic bananas."},
+    {"name": "Peanut (in Peanut Butter)", "risk_level": "MINIMAL", "classification": "Low Environmental Impact",                  "concern": "Peanuts are nitrogen-fixing and have modest water and carbon footprints relative to other protein sources.",        "alternative": "N/A"},
+    {"name": "Sugar",                "risk_level": "MINIMAL", "classification": "No notable concern",                             "concern": "Sugarcane has region-dependent labor and biodiversity concerns but moderate carbon footprint.",                  "alternative": "Certified Bonsucro or Fair Trade sugar."},
+    {"name": "Salt",                 "risk_level": "MINIMAL", "classification": "No notable concern",                             "concern": "None identified",                                                                                              "alternative": "N/A"},
+    {"name": "Soy Lecithin",         "risk_level": "MINIMAL", "classification": "Negligible volume",                              "concern": "Soy lecithin is a byproduct of soybean oil refining; very small contribution.",                                  "alternative": "Sunflower lecithin from non-deforestation regions."},
+    {"name": "Cocoa Butter",         "risk_level": "MEDIUM",  "classification": "Same supply chain as cocoa powder",              "concern": "Cocoa butter shares the West African deforestation and labor concerns of other cocoa products.",                 "alternative": "Certified cocoa butter."}
+  ],
+  "overall_risk": "MEDIUM",
+  "flagged_count": 7,
+  "total_count": 14,
+  "summary": "Environmental impact is dominated by cocoa (deforestation and labor risk in West Africa, ~19 kg CO₂e/kg) and three dairy ingredients (carbon-intensive at ~21 kg CO₂e/kg for cheese-equivalent dairy). No reef-toxic UV filters, microplastics, palm oil, or overfished species — this is a food product so the relevant axes are agricultural footprint and supply-chain sourcing rather than aquatic toxicity. No third-party certifications are indicated on the visible label.",
+  "key_concerns": [
+    "Cocoa is the highest-impact ingredient: drives West African deforestation and has documented child-labor issues without certification.",
+    "Three dairy ingredients (full cream milk powder, skim milk powder, whey) substantially elevate the carbon footprint of a relatively small (30 g) serving.",
+    "No certification markings (Fair Trade, Rainforest Alliance, RSPO-equivalent) are listed on the visible portion of the label."
+  ],
+  "recommendation": "If sustainability is a priority, prefer chocolate products with explicit Fair Trade, Rainforest Alliance, or 'deforestation-free' certification on the package. For frequent consumption, consider lower-dairy chocolate variants or plant-based alternatives. Aldi's product lines often have parallel certified options at similar price points.",
+  "_cache_stats": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 0
+  }
+}
