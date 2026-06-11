@@ -142,19 +142,6 @@ The app opens at `http://localhost:8501`. Paste your API key into the sidebar or
 
 If you put `ANTHROPIC_API_KEY=sk-ant-...` in a local `.env`, the sidebar will be pre-filled. The `.env` file is gitignored. Do not use this pattern when deploying to Streamlit Community Cloud — the deployed app is BYOK by design.
 
----
-
-## Deploy to Streamlit Community Cloud
-
-1. Push this repo to GitHub.
-2. Sign in at [share.streamlit.io](https://share.streamlit.io).
-3. New app → select `eunsoo-suk/Safe-Scan`.
-4. Main file path: `frontend/app.py`.
-5. Python version: 3.11+.
-6. Do not add any secret named `ANTHROPIC_API_KEY`. Leaving it empty is what makes the demo BYOK.
-7. Deploy.
-
-Streamlit Cloud installs from `requirements.txt`, runs `streamlit run frontend/app.py`, and serves the app at `https://<your-app-name>.streamlit.app`. Visitors enter their own key in the sidebar.
 
 ---
 
@@ -193,18 +180,6 @@ Safe Scan/
 | Vision OCR | Claude Sonnet 4.6 vision capability |
 | Caching | Anthropic ephemeral prompt cache |
 | Language | Python 3.11+ |
-
----
-
-## Development history
-
-The project went through three iterations:
-
-1. **v1.** Single-purpose carcinogenicity analyzer with a FastAPI backend and a separate React-style frontend. Removed because the surface area was too narrow for a single safety lens, and CORS and deployment friction made the demo unfriendly.
-2. **v2.** Two analyzers (carcinogenicity + genotoxicity), still split across FastAPI and frontend. Removed because the two lenses overlapped heavily and operating two services for a hackathon-scale app was overkill.
-3. **v2.1 (current).** Restructured to four orthogonal analyzers (allergens, endocrine, pregnancy, environmental) covering both topical and dietary exposures. Frontend and backend merged into a single Streamlit process. Vision OCR factored into its own utility tab so one extraction drives multiple analyses.
-
-Throughout, the goal was to keep regulatory provenance visible: every finding lets the user audit which standard or clinical reference drove the flag. The system prompts in `backend/analyzers/*.py` encode those references explicitly.
 
 ---
 
