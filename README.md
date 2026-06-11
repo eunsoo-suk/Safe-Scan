@@ -44,11 +44,7 @@ All analyzers return the same unified JSON schema, so the frontend renders all f
 The Label Scan tab accepts any photo of a packaging panel. A single Claude vision call returns a normalized, INCI-compliant ingredient list along with metadata (confidence, language, product type). Allergen disclosure statements (`CONTAINS: ...`) are surfaced separately. The extracted text is editable before being passed to any analyzer.
 
 <p align="center">
-  <img src="docs/images/label_scan.png" alt="Label Scan upload" width="900"/>
-</p>
-
-<p align="center">
-  <img src="docs/images/extracted_text.png" alt="Extracted ingredients" width="900"/>
+  <img src="docs/images/label_scan.png" alt="Label Scan and extracted ingredients" width="900"/>
 </p>
 
 ### 2. Run any of the four analyzers
