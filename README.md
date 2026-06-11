@@ -1,6 +1,7 @@
 <div align="center">
 
 # SafeScan
+https://safe-scan.streamlit.app/
 
 **Consumer Product Ingredient Safety Analyzer**
 
